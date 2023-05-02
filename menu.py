@@ -5,25 +5,18 @@ menu = "\n₪₪₪THE REBIRTH OF A PROGRAMMER₪₪₪\n\n" \
       "**AUTHORS(2)\n"
 print(menu)
 
-try:
-    scene = input(">>>")
 
-    while True:
-        if scene == "1":
-            start_the_gameplay_scene()
-        elif scene == "2":
-            print_authors()
-            scene = input(">>>")
-        elif scene == "menu":
-            print(menu)
-            scene = input(">>>")
-        else:
-            print("Введи 1 или 2. Что сложного?")
-            scene = input(">>>")
+scene = input(">>>")
 
-except KeyboardInterrupt:
-    a = input("Вы точно хотите выйти?[y/n]: ")
-    if a.lower() != "y":
-        exit()
+while True:
+    if scene == "1":
+        start_the_gameplay_scene()
+    elif scene == "2":
+        print_authors()
+        scene = input(">>>")
+    elif scene == "menu":
+        print(menu)
+        scene = input(">>>")
     else:
-        pass
+        print("Введи 1 или 2. Что сложного?")
+        scene = input(">>>")

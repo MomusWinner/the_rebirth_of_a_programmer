@@ -12,7 +12,6 @@ def choosing_an_action(actions):
         count += 1
 
     result = return_choosing_result(len(actions))
-    print(result)
     print(list(actions.keys())[result])
     actions[list(actions.keys())[result]]()
 
@@ -26,7 +25,5 @@ def return_choosing_result(len):
         except:
             print("Неправельно введён номер")
 
-
-
 def print_title(string: str):
-    print(f"₪₪₪₪₪₪ {string} ₪₪₪₪₪₪")
+    print(f"---- {string} ----")
